@@ -63,13 +63,31 @@
         padding: 3px;
     }
 
+    span {
+        color: white;
+        background-color: var(--roxo);
+        width: 40px;
+        padding: 5px;
+    }
+
+    input {
+        background-color: #02b9b3;
+        font-size: 1em;
+        width: calc(98% - 40px); 
+        height: 100%;
+        border-radius: 8px;
+        border: 0px;
+        padding: 3px;
+        transform: translateY(-6px);
+    }
+
+    input:focus-within {
+        background-color: white;
+    }
+
     label {
         background-color: white;
         display: none;
-    }
-
-    .campo input{
-        background-color: white;
     }
 
     .botao {

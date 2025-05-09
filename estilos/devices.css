@@ -107,6 +107,8 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
     #login {
         min-width: 1400px;
         height: 90vh;
+        transition: width 2s, height 2s;
+        transition-timing-function: ease;
     }
 
     #imagem {
