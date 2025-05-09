@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* Tipo de dispositivo Largura mínima recomendada:
+Extra pequeno (telefone em pé) / 0px – 479px
+Pequeno (telefone grande) / 480px – 767px
+Médio (tablet retrato) 768px – 991px
+Grande (tablet paisagem / desktop pequeno) 992px – 1199px
+Extra grande (desktop padrão) / 1200px – 1399px
+Ultra grande (monitores 2K ou mais) / 1400px+ */
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+    /* tablet e telas médias */
+
+    body {
+        background-image: linear-gradient(to bottom, var(--roxo), var(--verde));
+    }
+
+    main {
+        width: 80vw;
+        height: 80vh;
+        margin: auto;
+    }
+
+    #login {
+        width: 80vw;
+        height: 280px;
+        overflow: hidden;
+    }
+
+    #imagem {
+        float: left;
+        width: 50vw; /* Considerando que é 40% da largura disponível */
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
+    #formulario {
+        float: right;
+        width: 301px; 
+        height: auto;
+        position: absolute;
+        top: 5%;
+        left: 61%;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) /* tablet retrato e outras telas médias*/{
+
+    body {
+        background-image: linear-gradient(to bottom, var(--roxo), var(--verde));
+    }
+
+    #login {
+        width: 992px;
+        height: 90vh;
+    }
+
+    #imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    #formulario {
+        float: right;
+        width: 353px; 
+        height: auto;
+        position: absolute;
+        top: 18%;
+        left: 56%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) /* desktop e notebook */ {
+    body {
+        background-image: linear-gradient(to bottom, var(--roxo), var(--verde));
+    }
+
+    #login {
+       min-width: 999px;
+       max-width: 1250px;
+       height: 90vh;
+    }
+
+    #imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    #formulario {
+        float: right;
+        height: auto;
+        width: 400px;
+        position: absolute;
+        left: 56%;
+        top: 9%;
+    }
+}
+
+@media screen and (min-width: 1400px) /* telas maiores */ {
+    body {
+        background: var(--roxo) linear-gradient(to bottom, var(--roxo), var(--verde));
+    }
+
+    #login {
+        min-width: 1400px;
+        height: 90vh;
+    }
+
+    #imagem {
+        float: right;
+        height: 100%;
+        width: 40%;
+    }
+
+    #formulario {
+        float: left;
+        height: auto;
+        width: 600px;
+        position: absolute;
+        left: 7%;
+        top: 18%;
+    }
+}
